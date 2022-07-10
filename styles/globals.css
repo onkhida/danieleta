@@ -1,16 +1,444 @@
-html,
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	/* line-height: 1; */
+    font-family: Poppins, sans-serif;
+	overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* End of Reset */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
 }
 
-* {
-  box-sizing: border-box;
+body {
+    background: #230366;
+    overflow-x: hidden;
+    color: white;
+}
+
+.overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #5200FF;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay .nav-links {
+    position: relative;
+    top: 25%;
+    width: 100vw;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    font-family: 'Crimson Text', serif;
+    justify-content: space-around;
+}
+
+.overlay .nav-links ul {
+    list-style-type: none;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: white !important;;
+    display: block; 
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #ccefff!important;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+.overlay .changetheme {
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    font-size: 60px;
+}
+
+.main-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrapper .content-wrapper {
+    width: 65%;
+    /* border: 1px solid orange; */
+}
+
+nav {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .icon a {
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+nav .navlinks {
+    display: flex;
+    align-items: center;
+}
+
+nav .navlinks ul {
+    list-style-type: none;
+    display: flex;
+    padding-right: 40px;
+}
+
+nav .navlinks ul li a {
+    padding-right: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Crimson Text', serif;
+}
+
+.toggletheme {
+    cursor: pointer;
+}
+
+.open-nav {
+    display: none;
+    cursor: pointer;
+}
+
+.fingers-crossed {
+    /* border: 3px solid red; */
+    position: absolute;
+    right: 0;
+    top: 30vh;
+}
+
+.pointing-fingers {
+    position: absolute;
+    left: 0;
+    top: 120vh;
+}
+
+.info-text {
+    /* border: 2px solid pink; */
+    min-height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-text img {
+    height: 200px;
+    width: 200px;
+}
+
+.info-text h1 {
+    color: white;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 28px;
+}
+
+.info-text h3 {
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 26px;
+}
+
+.info-text p {
+    color: white;
+    font-family: 'Crimson Text', serif;
+    padding-top: 15px;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+.info-text .btn-group a {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    color: #230366;
+    background: #00D1FF;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.resume-container .resume-text {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.resume-container .resume-text .work {
+    margin-top: 15px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.resume-container .resume-text .work .title {
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.resume-container .resume-text .work .title .job {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.resume-container .resume-text .work .title .location {
+    color: rgb(189, 200, 253);
+    text-decoration: none;
+    cursor: pointer!important;
+
+}
+
+.resume-container .resume-text .work .description {
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.resume-container .resume-text .past-work {
+    width: 49%;
+}
+
+.resume-container .resume-text h1 {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.resume-container .resume-text .current-work {
+    width: 47%;
+}
+
+.footer-container {
+    margin-top: 200px;
+    margin-bottom: 70px;
+}
+
+.footer-container h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-container p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.footer-container .contacts a {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #d1d1d1;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1270px) {
+    .pointing-fingers img {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .resume-container .resume-text {
+        /* border: 1px solid purple; */
+        width: 90%;
+    }
+
+    .pointing-fingers img {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .resume-container .resume-text {
+        width: 100%;
+    }
+
+    .pointing-fingers {
+        display: none;
+    }
+
+    .footer-container {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .fingers-crossed img {
+        /* border: 3px solid red; */
+        width: 450px;
+    }
+
+    .info-text {
+        min-height: 90vh;
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+    .fingers-crossed img {
+        /* border: 3px solid aqua; */
+        width: 300px;
+    }
+
+    .info-text {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .fingers-crossed img {
+        display: none;
+    }
+
+    nav .navlinks {
+        display: none;
+    }
+
+    nav .open-nav {
+        display: block
+    }
+
+    .resume-container .resume-text {
+        flex-direction: column-reverse;
+    }
+
+    .resume-container .resume-text .current-work {
+        width: 100%;
+    }
+
+    .resume-container .resume-text .past-work {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-wrapper .content-wrapper {
+        /* border: 2px solid crimson; */
+        width: 75%;
+    }
+
+    .info-text h1 {
+        font-size: 23px;
+    }
+
+    .info-text h3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .main-wrapper .content-wrapper {
+        width: 90%;
+    }
+
+    /* .footer-container .contacts a {
+        width: 100%!important;
+        border: 1px solid pink;
+    } */
+}
+
+
+@media only screen and (max-width: 370px) {
+    .info-text {
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .resume-container .resume-text .current-work {
+        margin-top: 50px;
+    } 
 }
