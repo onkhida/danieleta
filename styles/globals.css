@@ -187,9 +187,9 @@ nav .navlinks ul li a {
     justify-content: center;
 }
 
-.info-text img {
-    height: 200px;
-    width: 200px;
+.info-text .image-wrapper {
+    height: 200px!important;
+    width: 200px!important;
 }
 
 .info-text h1 {
@@ -222,6 +222,7 @@ nav .navlinks ul li a {
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
     margin-bottom: 25px;
+    margin-right: 3px;
 }
 
 .resume-container {
@@ -307,21 +308,8 @@ nav .navlinks ul li a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1270px) {
-    .pointing-fingers img {
+    .pointing-fingers {
         width: 350px;
     }
 }
@@ -332,7 +320,7 @@ nav .navlinks ul li a {
         width: 90%;
     }
 
-    .pointing-fingers img {
+    .pointing-fingers {
         width: 200px;
     }
 }
@@ -352,7 +340,7 @@ nav .navlinks ul li a {
 }
 
 @media only screen and (max-width: 1200px) {
-    .fingers-crossed img {
+    .fingers-crossed {
         /* border: 3px solid red; */
         width: 450px;
     }
@@ -365,7 +353,7 @@ nav .navlinks ul li a {
 }
 
 @media only screen and (max-width: 950px) {
-    .fingers-crossed img {
+    .fingers-crossed {
         /* border: 3px solid aqua; */
         width: 300px;
     }
@@ -376,7 +364,7 @@ nav .navlinks ul li a {
 }
 
 @media only screen and (max-width: 800px) {
-    .fingers-crossed img {
+    .fingers-crossed {
         display: none;
     }
 
