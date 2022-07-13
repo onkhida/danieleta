@@ -5,12 +5,13 @@ import Image from 'next/image'
 import fingersCrossed from '../public/fingers-crossed.png'
 import pointingFingers from '../public/pointing-fingers.png'
 
-export default function Home() {
+export default function Home({ isDark }) {
   return (
     <>
-      <Info />
-      <Resume />
-      <Footer />
+      <Info isDark={isDark} />
+      <Resume isDark={isDark} />
+      <Footer isDark={isDark} />
+
       <div className="fingers-crossed">
         <Image 
           src={fingersCrossed}

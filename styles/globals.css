@@ -64,7 +64,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #5200FF;
+    background: linear-gradient(174.93deg, #5200FF 0%, #1B0055 99.7%);
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 9;
@@ -121,6 +121,22 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.white-bg {
+    background: white;
+}
+
+.black-txt {
+    color: black!important;
+}
+
+#dark-blue-txt {
+    color: rgb(34, 56, 169);
+}
+
+.gray-txt {
+    color: rgb(65, 65, 65);
 }
 
 .main-wrapper .content-wrapper {

@@ -1,6 +1,6 @@
 import Work from './Work'
 
-function Resume() {
+function Resume({ isDark }) {
     return ( 
         <div className="resume-container">
             <div className="resume-text">   
@@ -13,6 +13,7 @@ function Resume() {
                         separator="at "
                         url=""
                         description="A student run enterprise at the African Leadership Academy that aimed to allow organizations on campus promote and effectively reach their target audience. "
+                        isDark={isDark}
                     />
 
                     <Work 
@@ -21,6 +22,7 @@ function Resume() {
                         separator="w/ "
                         url=""
                         description="Scripted a web crawler to extract and clean information of thousands of students from online forms. "
+                        isDark={isDark}
                     />
                     
                     <Work 
@@ -29,6 +31,7 @@ function Resume() {
                         separator="at "
                         url="https://dotinc.netlify.app"
                         description="An all-in-one financial service to students on the African Continent"
+                        isDark={isDark}
                     />
 
                     <Work 
@@ -37,6 +40,7 @@ function Resume() {
                         separator="at "
                         url="https://www.alcg.co.za"
                         description="An organization that works to aid in the growth of small to medium-size businesses on the African continent through top-notch consulting."
+                        isDark={isDark}
                     />
 
                     <Work 
@@ -45,6 +49,7 @@ function Resume() {
                         separator="at "
                         url=""
                         description=""
+                        isDark={isDark}
                     />
 
                 </div>
@@ -58,6 +63,7 @@ function Resume() {
                         separator="at "
                         url="https://www.jacobs-university.de"
                         description=""
+                        isDark={isDark}
                     />
 
                     <Work 
@@ -66,6 +72,7 @@ function Resume() {
                         separator="at "
                         url="https://www.onceamonth.org.za"
                         description="Non-profit organization committed to empowering underprivileged refugee and asylum-seeking women in South Africa with access to period products and menstrual education."
+                        isDark={isDark}
                     />
 
                     <Work 
@@ -74,6 +81,7 @@ function Resume() {
                         separator="at "
                         url="https://cardinalkeys.com"
                         description="Software company in Lagos, Nigeria that delivers world-class digital tools and solutions that ensure companies become more efficient, engaging and responsive."
+                        isDark={isDark}
                     />
                 </div>
             </div>

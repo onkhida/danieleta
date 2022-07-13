@@ -16,6 +16,14 @@ function MyApp({ Component, pageProps }) {
       console.log(overlay)
   }
 
+  const [ darktheme, setDarkTheme ] = useState(true)
+
+  const handleSetDarkTheme = () => {
+    setDarkTheme(
+      (prevbool) => !prevbool
+    )
+  }
+
   return <>
           <Head>
             <meta charset="UTF-8" />
@@ -28,11 +36,11 @@ function MyApp({ Component, pageProps }) {
           </Head>
 
 
-          <Overlay openOverlay={overlay} toggleOverlay={ handleSetOverlay } />
-          <div className="main-wrapper">
+          <Overlay isDark={darktheme} toggleDark={ handleSetDarkTheme } openOverlay={overlay} toggleOverlay={ handleSetOverlay } />
+          <div className={`main-wrapper ${darktheme ? "" : "white-bg"}  `}>
             <div className="content-wrapper">
-              <Navbar toggleOverlay={ handleSetOverlay } />
-              <Component {...pageProps} />
+              <Navbar isDark={darktheme} toggleOverlay={ handleSetOverlay } toggleDark={ handleSetDarkTheme } />
+              <Component isDark={darktheme} {...pageProps} />
             </div>
           </div>
          </>
