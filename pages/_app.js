@@ -1,9 +1,21 @@
 import '../styles/globals.css'
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
+import { useState } from 'react'
+import Overlay from '../components/Overlay'
 
 function MyApp({ Component, pageProps }) {
   
+  const [ overlay, setOverlay ] = useState(false)
+
+  const handleSetOverlay = () => {
+      setOverlay(
+          (prevbool) => !prevbool
+      )
+
+      console.log(overlay)
+  }
+
   return <>
           <Head>
             <meta charset="UTF-8" />
@@ -15,9 +27,11 @@ function MyApp({ Component, pageProps }) {
             <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
           </Head>
 
+
+          <Overlay openOverlay={overlay} toggleOverlay={ handleSetOverlay } />
           <div className="main-wrapper">
             <div className="content-wrapper">
-              <Navbar />
+              <Navbar toggleOverlay={ handleSetOverlay } />
               <Component {...pageProps} />
             </div>
           </div>

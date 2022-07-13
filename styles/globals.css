@@ -67,6 +67,7 @@ body {
     background-color: #5200FF;
     overflow-x: hidden;
     transition: 0.5s;
+    z-index: 9;
 }
 
 .overlay .nav-links {
@@ -91,6 +92,10 @@ body {
     color: white !important;;
     display: block; 
     transition: 0.3s;
+}
+
+.make-full-width {
+    width: 100vw;
 }
 
 .overlay a:hover, .overlay a:focus {
