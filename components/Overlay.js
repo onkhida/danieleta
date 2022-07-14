@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 function Overlay({ openOverlay, toggleOverlay, toggleDark }) {
     return ( 
         <>
@@ -15,11 +17,22 @@ function Overlay({ openOverlay, toggleOverlay, toggleDark }) {
                 </a>
 
                 <div className="nav-links">
-                    <ul>
-                        <li><a href="#">Writing</a></li>
-                        <li><a href="#">Software</a></li>
-                        <li><a href="#">Newsletter</a></li>
-                        <li><a href="#">Design & UI</a></li>
+                    <ul>                         
+                        <li>
+                            <Link href="https://medium.com/@daniel.eta">
+                                <a href="#">Writing</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/software">
+                                <a href="#">Software</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/">
+                                <a href="#">Design & UI</a>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

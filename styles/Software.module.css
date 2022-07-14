@@ -80,6 +80,24 @@
     width: 100%!important;
 }
 
+.designcontainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.designimg {
+    width: 30%!important;
+    margin-bottom: 15px;
+    cursor: pointer;
+    filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.25));
+}
+
+.designimg img {
+    width: 100%;
+}
+
 @media only screen and (max-width: 800px) {
     .projectcontainer .projects {
         width: 100%
@@ -95,5 +113,9 @@
 
     .topwrap {
         margin-bottom: 35px;
+    }
+
+    .designcontainer .designimg {
+        width: 100%!important;
     }
 }
