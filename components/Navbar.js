@@ -10,9 +10,11 @@ export default function Header({ isDark, toggleOverlay, toggleDark }) {
         <nav>
 
             <div className="icon">
-                <a href="#" className={`${isDark ? "" : "black-txt"}`}>
-                    de.
-                </a>
+                <Link href="/">
+                    <a className={`${isDark ? "" : "black-txt"}`}>
+                        de.
+                    </a>
+                </Link>
             </div>
             <div className="navlinks">
 
@@ -24,7 +26,7 @@ export default function Header({ isDark, toggleOverlay, toggleDark }) {
                     </li>
 
                     <li>
-                        <Link href="https://medium.com/@daniel.eta">
+                        <Link href="/software">
                             <a className={`${isDark ? "" : "black-txt"}`}>Software</a> 
                         </Link>
                     </li>
