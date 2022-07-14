@@ -262,12 +262,12 @@ nav .navlinks ul li a {
     flex-wrap: wrap;
 }
 
-.resume-container .resume-text .work {
+.work {
     margin-top: 15px;
     font-family: 'DM Sans', sans-serif;
 }
 
-.resume-container .resume-text .work .title {
+.work .title {
     font-style: italic;
     font-size: 15px;
     color: white;
@@ -275,19 +275,19 @@ nav .navlinks ul li a {
     cursor: pointer;
 }
 
-.resume-container .resume-text .work .title .job {
+.title .job {
     font-style: normal;
     font-weight: bold;
 }
 
-.resume-container .resume-text .work .title .location {
+.title .location {
     color: rgb(189, 200, 253);
     text-decoration: none;
     cursor: pointer!important;
 
 }
 
-.resume-container .resume-text .work .description {
+.description {
     font-size: 11px;
     margin-top: 10px;
 }
