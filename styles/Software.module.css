@@ -21,11 +21,12 @@
 }
 
 .projectcontainer .projects {
-    width: 40%
+    width: 45%
 }
 
 .projectcontainer .skills {
-    width: 40%;
+    width: 45%;
+    margin-bottom: 30px;
 }
 
 .projectcontainer .skills h3 {
@@ -77,4 +78,22 @@
 
 .imagewrapper {
     width: 100%!important;
+}
+
+@media only screen and (max-width: 800px) {
+    .projectcontainer .projects {
+        width: 100%
+    }
+    
+    .projectcontainer .skills {
+        width: 100%;
+    }
+
+    .projectcontainer {
+        flex-direction: column-reverse;
+    }
+
+    .topwrap {
+        margin-bottom: 35px;
+    }
 }
