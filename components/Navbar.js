@@ -31,7 +31,7 @@ export default function Header({ isDark, toggleOverlay, toggleDark }) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="https://medium.com/@daniel.eta">
+                        <Link href="/design">
                             <a className={`${isDark ? "" : "black-txt"}`}>Design & UI</a> 
                         </Link>
                     </li>

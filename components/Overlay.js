@@ -29,7 +29,7 @@ function Overlay({ openOverlay, toggleOverlay, toggleDark }) {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="/design">
                                 <a href="#">Design & UI</a>
                             </Link>
                         </li>
