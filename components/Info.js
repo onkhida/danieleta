@@ -26,7 +26,7 @@ function Info({ isDark }) {
                 <Link href='/software'>
                     <a>Code</a>
                 </Link>
-                <Link href='/'>
+                <Link href='/design'>
                     <a>Design & UI</a>
                 </Link>
             </div>
