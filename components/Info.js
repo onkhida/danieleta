@@ -17,7 +17,7 @@ function Info({ isDark }) {
             <h1 className={`${isDark ? "" : "black-txt"}`}>Hi there, my name is Daniel Eta.</h1>
             <h3 className={`${isDark ? "" : "black-txt"}`}>I make software & tell stories</h3>
 
-            <p className={`${isDark ? "" : "black-txt"}`}>Leveraging emerging technologies to foster communal growth is my genuine passion. Translating a burdensome problem into a ground-breaking solution gives me fulfillment. I derive raw gratification from building systems that work. In whatever work I do, I’m also constantly looking to satisfy these 3 needs and leave my footprint of excellence. </p>
+            <p className={`${isDark ? "" : "black-txt"}`}>Leveraging emerging technologies to foster communal growth is my genuine passion. Translating a burdensome problem into a ground-breaking solution gives me fulfillment. I derive raw gratification from building systems that work. In whatever work I do, I’m constantly looking to satisfy these 3 needs and leave my footprint of excellence. </p>
 
             <div className="btn-group">
                 <Link href='https://medium.com/@daniel.eta'>
