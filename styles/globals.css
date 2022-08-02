@@ -64,7 +64,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    background: linear-gradient(174.93deg, #5200FF 0%, #1B0055 99.7%);
+    background: linear-gradient(174.93deg, #00D1FF 0%, #230958 99.7%);
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 9;
