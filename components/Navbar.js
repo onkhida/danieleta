@@ -8,7 +8,6 @@ import HamburgerDark from './HamburgerDark'
 export default function Header({ isDark, toggleOverlay, toggleDark }) {
     return (
         <nav>
-
             <div className="icon">
                 <Link href="/">
                     <a className={`${isDark ? "" : "black-txt"}`}>
@@ -17,30 +16,36 @@ export default function Header({ isDark, toggleOverlay, toggleDark }) {
                 </Link>
             </div>
             <div className="navlinks">
-
                 <ul>
                     <li>
-                        <Link href="https://medium.com/@daniel.eta">
-                            <a className={`${isDark ? "" : "black-txt"}`}>Writing</a> 
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link href="/software">
-                            <a className={`${isDark ? "" : "black-txt"}`}>Software</a> 
+                        <Link href="#">
+                            <a className={`${isDark ? "" : "black-txt"}`}>About</a> 
                         </Link>
                     </li>
                     <li>
-                        <Link href="/design">
+                        <Link href="#">
+                            <a className={`${isDark ? "" : "black-txt"}`}>Projects</a> 
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="#">
+                            <a className={`${isDark ? "" : "black-txt"}`}>Articles</a> 
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="#">
                             <a className={`${isDark ? "" : "black-txt"}`}>Design & UI</a> 
                         </Link>
                     </li>
                 </ul>
-
-                <a className="toggletheme" onClick={toggleDark}>
-                    {isDark ? <Sun /> : <Moon /> } 
-                </a>
             </div>
+
+            <a className="toggletheme" onClick={toggleDark}>
+                    {isDark ? <Sun /> : <Moon /> } 
+            </a>
+
+
+
             <div className="open-nav" onClick={ toggleOverlay }>
                     {isDark ? <HamburgerLight /> : <HamburgerDark />} 
             </div>

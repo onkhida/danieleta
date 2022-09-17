@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import { useState } from 'react'
 import Overlay from '../components/Overlay'
+import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }) {
   
@@ -43,6 +44,7 @@ function MyApp({ Component, pageProps }) {
               <Navbar isDark={darktheme} toggleOverlay={ handleSetOverlay } toggleDark={ handleSetDarkTheme } />
               <Component isDark={darktheme} {...pageProps} />
             </div>
+            <Footer isDark={darktheme} />
           </div>
          </>
 

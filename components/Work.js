@@ -9,7 +9,7 @@ function Work({ job, location, separator, description, url, isDark }) {
                 </span>
                  {separator}
                 <Link href={url}>
-                    <a id={`${isDark ? "" : "dark-blue-txt"}`} className="location">
+                    <a id={`${isDark ? "" : "black-txt"}`} className="location">
                          {location}
                     </a>
                 </Link>

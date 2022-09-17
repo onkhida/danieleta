@@ -10,8 +10,6 @@ export default function Home({ isDark }) {
     <>
       <Info isDark={isDark} />
       <Resume isDark={isDark} />
-      <Footer isDark={isDark} />
-
       <div className="fingers-crossed">
         <Image 
           src={fingersCrossed}

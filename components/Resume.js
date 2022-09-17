@@ -52,6 +52,9 @@ function Resume({ isDark }) {
                         isDark={isDark}
                     />
 
+                    {/* <a className={`${isDark ? "cv" : "cv black-txt"}`}>Download CV</a> */}
+
+
                 </div>
 
                 <div className="current-work">
@@ -76,13 +79,14 @@ function Resume({ isDark }) {
                     />
 
                     <Work 
-                        job="Tech Lead "
-                        location="Cardinal Keys, Nigeria "
+                        job="Full-stack Developer "
+                        location="Boolean Labs "
                         separator="at "
-                        url="https://cardinalkeys.com"
-                        description="Software company in Lagos, Nigeria that delivers world-class digital tools and solutions that ensure companies become more efficient, engaging and responsive."
+                        url="https://www.booleanlabs.io/"
+                        description="A digital co-creation launchpad that helps entrepreneurs (in startups) and intrapreneurs (in enterprises) across the globe deliver innovative technology products."
                         isDark={isDark}
                     />
+
                 </div>
             </div>
         </div>

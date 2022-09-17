@@ -64,38 +64,53 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    background: linear-gradient(174.93deg, #00D1FF 0%, #230958 99.7%);
+    background: rgba(0, 0, 0, 0.85);
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overlay .nav-links {
     position: relative;
-    top: 25%;
-    width: 100vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 30px;
-    display: flex;
-    font-family: 'Crimson Text', serif;
-    justify-content: space-around;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .overlay .nav-links ul {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content!important;
 }
 
-.overlay a {
-    padding: 8px;
+.overlay .nav-links ul li {
+    margin-top: 10px;
+    width: fit-content!important;
+}
+
+.overlay .nav-links ul li a {
     text-decoration: none;
-    font-size: 26px;
+    font-weight: 400;
+    font-size: 20px;
     color: white !important;;
     display: block; 
+    padding: 0!important;
     transition: 0.3s;
+    text-align: center;
+    width: fit-content!important;
 }
 
-.make-full-width {
-    width: 100vw;
+.add-width {
+    width: 70vw;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -103,23 +118,20 @@ body {
 }
 
 /* Position the close button (top right corner) */
-.overlay .closebtn {
+.overlay .actions {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-
-.overlay .changetheme {
-    position: absolute;
-    top: 20px;
-    left: 45px;
-    font-size: 60px;
+    top: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-wrapper {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -150,7 +162,7 @@ body {
 
 nav {
     display: flex;
-    margin-top: 30px;
+    margin-top: 50px;
     align-items: center;
     justify-content: space-between;
 }
@@ -166,17 +178,18 @@ nav .icon a {
 nav .navlinks {
     display: flex;
     align-items: center;
+
 }
 
 nav .navlinks ul {
     list-style-type: none;
     display: flex;
-    padding-right: 40px;
 }
 
 nav .navlinks ul li a {
-    padding-right: 25px;
     text-decoration: none;
+    font-size: 16px;    
+    padding-right: 25px;
     color: white;
     font-family: 'Crimson Text', serif;
 }
@@ -215,6 +228,7 @@ nav .navlinks ul li a {
 .info-text .image-wrapper {
     height: 200px!important;
     width: 200px!important;
+    margin-bottom: 25px;
 }
 
 .info-text h1 {
@@ -242,12 +256,27 @@ nav .navlinks ul li a {
     font-family: 'DM Sans', sans-serif;
     font-size: 11px;
     text-decoration: none;
-    color: #230366;
-    background: #00D1FF;
+    color: white;
     padding: 10px 20px 10px 20px;
-    border-radius: 20px;
+    
+    border-radius: 5px;
     margin-bottom: 25px;
     margin-right: 3px;
+}
+
+.info-text .mobile-btn-group {
+    display: none;
+}
+
+.info-text .mobile-btn-group a {
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 17px;
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
 .resume-container {
@@ -260,6 +289,15 @@ nav .navlinks ul li a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.cv {
+    margin-top: 70px;
+    font-family: 'Crimson Pro', serif;
+    color:  #BFF4FF;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 .work {
@@ -307,31 +345,54 @@ nav .navlinks ul li a {
 }
 
 .footer-container {
+    border-top: 2px solid #C9C9C9;
     margin-top: 200px;
-    margin-bottom: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
 }
 
-.footer-container h1 {
-    font-family: 'Crimson Text', serif;
-    font-size: 20px;
-    margin-bottom: 10px;
+.footer-container .links ul {
+    display: flex;
+    margin-left: 30px;
 }
 
-.footer-container p {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    margin-bottom: 7px;
-}
-
-.footer-container .contacts a {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
+.footer-container .links ul li a {
     text-decoration: none;
-    color: #d1d1d1;
-    margin-right: 10px;
-    cursor: pointer;
+    padding-right: 15px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Crimson Text', serif;
 }
 
+.footer-container .about {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-container .about p {
+    font-size: 17px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.footer-container .about small {
+    font-size: 10px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+@media only screen and (max-height: 700px) {
+    .info-text .image-wrapper {
+        margin-top: 100px;
+    }
+
+    .info-text {
+        margin-bottom: 50px;
+    }
+
+}
 
 @media only screen and (max-width: 1270px) {
     .pointing-fingers {
@@ -393,12 +454,29 @@ nav .navlinks ul li a {
         display: none;
     }
 
-    nav .navlinks {
+    nav .navlinks, nav .toggletheme {
+        display: none;
+    }
+
+    .footer-container { 
+        justify-content: flex-end;
+     }
+
+    .footer-container .links {
         display: none;
     }
 
     nav .open-nav {
         display: block
+    }
+
+    .info-text .mobile-btn-group { 
+        display: block;
+        width: 100%;
+    }
+
+    .info-text .btn-group {
+        display: none;
     }
 
     .resume-container .resume-text {
