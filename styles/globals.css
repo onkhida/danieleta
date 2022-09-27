@@ -133,6 +133,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid red; */
 }
 
 .white-bg {
@@ -158,6 +159,14 @@ body {
 .main-wrapper .content-wrapper {
     width: 65%;
     /* border: 1px solid orange; */
+}
+
+.main-wrapper .work-wrapper {
+    width: 73%;
+    /* border: 1px solid orange; */
+    flex-direction: column;
+    display: flex;
+
 }
 
 nav {
@@ -208,6 +217,10 @@ nav .navlinks ul li a {
     position: absolute;
     right: 0;
     top: 30vh;
+}
+
+.special-blue {
+    color: rgba(0, 114, 139, 0.81);
 }
 
 .pointing-fingers {
@@ -322,7 +335,6 @@ nav .navlinks ul li a {
     color: rgb(189, 200, 253);
     text-decoration: none;
     cursor: pointer!important;
-
 }
 
 .description {
@@ -515,6 +527,9 @@ nav .navlinks ul li a {
         width: 90%;
     }
 
+    .main-wrapper .work-wrapper {
+        width: 90%
+    }
     .info-text .image-wrapper {
         width: 150px!important;
         height: 150px!important;
@@ -537,4 +552,16 @@ nav .navlinks ul li a {
     .resume-container .resume-text .current-work {
         margin-top: 50px;
     } 
+}
+
+@media only screen and (max-width: 936px) {
+    .main-wrapper .work-wrapper {
+        width: 80%;    
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .main-wrapper .work-wrapper {
+        width: 85%;
+    }
 }

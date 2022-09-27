@@ -1,0 +1,116 @@
+.wrapper {
+    /* border: 3px solid white; */
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.wrapper .header {
+    /* border: 1px solid red; */
+}
+
+.wrapper .header h1 {
+    font-size: 57px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Crimson Pro', serif;
+}
+
+.wrapper .content {
+    /* border: 1px solid aqua; */
+    display: flex;
+    margin-top: 10px;
+    /* height: 300px; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrapper .header p {
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+    /* border: 1px solid red; */
+    width: 80%;
+    margin-top: 20px;
+}
+
+.wrapper .content .build {
+    /* border: 2px solid red; */
+    max-width: 338px;
+    flex-direction: column;
+    display: flex;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    align-items: center;
+    border-radius: 10px;
+    /* background: rgba(49, 4, 146, 0.41); */
+    padding: 30px 0px 30px 0px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.wrapper .content .build .img {
+    /* border: 1px solid red; */
+    width: 80%;
+    margin-bottom: 10px;
+    background: none!important;
+}  
+
+.wrapper .content .build h1 {
+    font-size: 15px;
+    width: 80%;
+    font-family: "DM Sans", sans-serif;
+    background: none!important;
+}
+
+.wrapper .content .build p {
+    font-size: 13px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 80%;
+    font-family: "DM Sans", sans-serif;
+    background: none!important;
+}
+
+.wrapper .content .build a {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-decoration: none;
+    background: none!important;
+    color: rgba(94, 226, 255, 0.81);
+    width: 80%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
+}
+
+@media only screen and (max-width: 925px) {
+    .wrapper .content .build {
+        max-width: 300px;
+    }
+
+    .wrapper .header p {
+
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 710px) {
+    .wrapper .content .build {
+        max-width: 80%!important;
+    }
+
+    .wrapper .content {
+        justify-content: center;
+
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .wrapper .content .build {
+        max-width: 100%!important;
+    }
+
+}

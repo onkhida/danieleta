@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import Head from 'next/head'
-import Navbar from '../components/Navbar'
 import { useState } from 'react'
 import Overlay from '../components/Overlay'
 import Footer from '../components/Footer'
@@ -30,9 +29,11 @@ function MyApp({ Component, pageProps }) {
             <meta charset="UTF-8" />
             <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>Daniel Eta👋🏾</title>
+            <title>Daniel Eta👋🏾</title>            
             <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+            <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
             <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet" />
           </Head>
@@ -40,10 +41,7 @@ function MyApp({ Component, pageProps }) {
 
           <Overlay isDark={darktheme} toggleDark={ handleSetDarkTheme } openOverlay={overlay} toggleOverlay={ handleSetOverlay } />
           <div className={`main-wrapper ${darktheme ? "" : "white-bg"}  `}>
-            <div className="content-wrapper">
-              <Navbar isDark={darktheme} toggleOverlay={ handleSetOverlay } toggleDark={ handleSetDarkTheme } />
-              <Component isDark={darktheme} {...pageProps} />
-            </div>
+              <Component handleSetOverlay={handleSetOverlay} handleSetDarkTheme={handleSetDarkTheme} isDark={darktheme} {...pageProps} />
             <Footer isDark={darktheme} />
           </div>
          </>
