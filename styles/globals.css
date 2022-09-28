@@ -169,6 +169,10 @@ body {
 
 }
 
+.active-tag {
+    color: #A479FF;
+}
+
 nav {
     display: flex;
     margin-top: 50px;

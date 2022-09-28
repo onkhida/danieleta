@@ -1,0 +1,112 @@
+.articleswrapper {
+    width: 73%;
+    /* border: 3px solid white; */
+}
+
+.articleswrapper .wrap {
+    /* border: 1px solid maroon; */
+    margin-top: 80px;
+}
+
+.articleswrapper .wrap h1 {
+    font-size: 57px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Crimson Pro', serif;
+}
+
+.articleswrapper .wrap p {
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+    /* border: 1px solid red; */
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.articleswrapper .wrap .tags {
+    /* border: 1px solid white; */
+    width: 100%;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.articleswrapper .wrap .tags span {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.articleswrapper .wrap .posts {
+    width: 100%;
+    margin-top: 50px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article {
+    width: 80%;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    /* border: 1px solid mediumaquamarine; */
+}
+
+.article:hover {
+    border: 2px solid #B490FF;
+}
+
+.article .img {
+    /* border: 1px solid red; */
+    width: 30%;
+}
+
+.article .text {
+    width: 70%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    padding: 25px 0 25px 0;
+}
+
+.article .text small {
+    font-size: 11px;
+    font-weight: bold;
+    font-family: "Crimson Pro", serif;
+    width: 80%;
+}
+
+.article .text h1 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 80%;
+}
+
+.article .text p {
+    margin: 0;
+    font-size: 11px;
+    /* border: 1px solid red; */
+}
+
+.article .text a {
+    width: 80%;
+    text-align: right;
+    color: #B490FF;
+    font-size: 10px;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 6px;
+    /* border: 2px solid aquamarine; */
+}
