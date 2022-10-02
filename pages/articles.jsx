@@ -9,14 +9,14 @@ export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme
 
             <div className={styles.wrap}>
                 <h1 id={`${isDark ? "" : "black-txt"}`} >::articles</h1>
-                <p id={`${isDark ? "" : "black-txt"}`} >I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
+                <p id={`${isDark ? "" : "black-txt"}`} className={styles.about}>I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
                 <div className={styles.tags}>
-                    <span className='active-tag'>ALL</span>
-                    <span id={`${isDark ? "" : "black-txt"}`} >CHESS</span>
-                    <span id={`${isDark ? "" : "black-txt"}`} >DATA SCIENCE</span>
-                    <span id={`${isDark ? "" : "black-txt"}`} >WEB DEVELOPMENT</span>
-                    <span id={`${isDark ? "" : "black-txt"}`} >ALGORITHMS</span>
-                    <span id={`${isDark ? "" : "black-txt"}`} >PHILOSOPHY</span>
+                    <div className='active-tag'>ALL</div>
+                    <div id={`${isDark ? "" : "black-txt"}`} >CHESS</div>
+                    <div id={`${isDark ? "" : "black-txt"}`} >DATA SCIENCE</div>
+                    <div id={`${isDark ? "" : "black-txt"}`} >ALGORITHMS</div>
+                    <div id={`${isDark ? "" : "black-txt"}`} >WEB DEVELOPMENT</div>
+                    <div id={`${isDark ? "" : "black-txt"}`} >PHILOSOPHY</div>
                 </div>
                 <hr />
 
