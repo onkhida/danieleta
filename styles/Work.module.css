@@ -8,6 +8,7 @@
 
 .wrapper .header {
     /* border: 1px solid red; */
+    margin-bottom: 20px;
 }
 
 .wrapper .header h1 {
@@ -111,6 +112,7 @@
 @media only screen and (max-width: 415px) {
     .wrapper .content .build {
         max-width: 100%!important;
+        /* border: 1px solid aquamarine; */
     }
 
 }

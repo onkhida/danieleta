@@ -23,12 +23,12 @@ export default function Header({ isDark, toggleOverlay, toggleDark }) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="#">
+                        <Link href="/work">
                             <a className={`${isDark ? "" : "black-txt"}`}>Projects</a> 
                         </Link>
                     </li>
                     <li>
-                        <Link href="#">
+                        <Link href="/articles">
                             <a className={`${isDark ? "" : "black-txt"}`}>Articles</a> 
                         </Link>
                     </li>

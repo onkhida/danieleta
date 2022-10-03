@@ -28,8 +28,7 @@ export default function ProjectBuild({ img, name, description, link, isDark, sho
     
     return (
         <div 
-            onMouseEnter={addBackground} 
-            onMouseLeave={removeBackground}
+            style={bgStyle}
             className={styles.build}
         >
             <div className={styles.img}>
