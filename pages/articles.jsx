@@ -1,5 +1,5 @@
 import styles from '../styles/Articles.module.css'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar/Navbar'
 import Article from '../components/Article'
 
 export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme }) {

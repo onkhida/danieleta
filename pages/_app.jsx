@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import Head from 'next/head'
 import { useState } from 'react'
-import Overlay from '../components/Overlay'
+import Overlay from '../components/Navbar/Overlay'
 import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }) {

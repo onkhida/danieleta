@@ -1,10 +1,11 @@
-import Info from '../components/Info'
-import Resume from '../components/Resume/Resume'
-import Footer from '../components/Footer'
 import Image from 'next/image'
+
 import fingersCrossed from '../public/fingers-crossed.png'
 import pointingFingers from '../public/pointing-fingers.png'
-import Navbar from '../components/Navbar'
+
+import Navbar from '../components/Navbar/Navbar'
+import Info from '../components/Info'
+import Resume from '../components/Resume/Resume'
 
 export default function Home({ isDark, handleSetOverlay, handleSetDarkTheme }) {
   return (

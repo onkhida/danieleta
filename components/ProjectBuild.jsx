@@ -1,29 +1,9 @@
 import styles from "../styles/Work.module.css"
-import de from '../public/project/de.png'
 import Image from "next/image"
 
 export default function ProjectBuild({ img, name, description, link, isDark, show }) {
-    // console.log(de)
-    // console.log(img)
-    // console.log(name)
-    // console.log(description)
-    // console.log(link)
-
     const bgStyle = {
         background: `${isDark ? "rgba(49, 4, 146, 0.41)" : "#EEEEEE"}`
-    }
-
-    const permBgStyle = {
-        background: `${isDark ? "rgba(49, 4, 146, 0.41)" : "#EEEEEE"}`
-    }
-
-    const addBackground = (e) => {
-        // e.target.style.background = ''
-        e.target.style.background = `${isDark ? "rgba(49, 4, 146, 0.41)" : "#EEEEEE"}`
-    }
-
-    const removeBackground = (e) => { 
-        e.target.style.background = 'none'
     }
     
     return (
@@ -48,7 +28,6 @@ export default function ProjectBuild({ img, name, description, link, isDark, sho
 
                     github.com
             </a>
-
         </div>
     )
 }

@@ -1,7 +1,9 @@
 import Link from 'next/link'
-import { useState } from 'react'
-import Sun from '../components/Sun'
-import Moon from '../components/Moon'
+
+
+import Sun from './Sun'
+import Moon from './Moon'
+
 import HamburgerLight from './HamburgerLight'
 import HamburgerDark from './HamburgerDark'
 
@@ -43,8 +45,6 @@ export default function Header({ isDark, toggleOverlay, toggleDark }) {
             <a className="toggletheme" onClick={toggleDark}>
                     {isDark ? <Sun /> : <Moon /> } 
             </a>
-
-
 
             <div className="open-nav" onClick={ toggleOverlay }>
                     {isDark ? <HamburgerLight /> : <HamburgerDark />} 

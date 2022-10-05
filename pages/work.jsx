@@ -1,6 +1,6 @@
 import styles from "../styles/Work.module.css"
 import ProjectBuild from "../components/ProjectBuild"
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar/Navbar'
 
 import de from '../public/project/de.png'
 import hourglass from '../public/project/hourglass.png'
