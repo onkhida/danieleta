@@ -1,4 +1,4 @@
-import Work from '../Work'
+import Work from './Work'
 
 // import data to populate it with
 import PastWork from './PastWork';

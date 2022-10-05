@@ -1,7 +1,9 @@
-import styles from "../styles/Work.module.css"
+import styles from "../../styles/Work.module.css"
 import Image from "next/image"
 
-export default function ProjectBuild({ img, name, description, link, isDark, show }) {
+
+
+export default function Project({ img, name, description, link, isDark, show }) {
     const bgStyle = {
         background: `${isDark ? "rgba(49, 4, 146, 0.41)" : "#EEEEEE"}`
     }

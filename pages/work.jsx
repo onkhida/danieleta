@@ -1,17 +1,12 @@
 import styles from "../styles/Work.module.css"
-import ProjectBuild from "../components/ProjectBuild"
+
+import Project from "../components/Project/Project"
+import ProjectData from '../components/Project/ProjectData'
+
 import Navbar from '../components/Navbar/Navbar'
 
-import de from '../public/project/de.png'
-import hourglass from '../public/project/hourglass.png'
-import learnr from '../public/project/learnr.png'
-import dot from '../public/project/dot.png'
-import bl from '../public/project/booleanlabs.png'
-import commerce from '../public/project/commerce.png'
 
 export default function Work({ isDark, handleSetOverlay, handleSetDarkTheme }) {
-
-    console.log(isDark)
 
     return ( 
        <div className="work-wrapper">
@@ -24,56 +19,19 @@ export default function Work({ isDark, handleSetOverlay, handleSetDarkTheme }) {
             </div>
 
             <div className={styles.content}>
-                <ProjectBuild 
-                    img={de}
-                    name="Daniel Eta" 
-                    show={true}
-                    isDark={isDark}
-                    description="My personal portfolio website. Houses most of the work I do, and passion I put into my craft." 
-                    link="https://github.com/danieldoteta/danieleta"
-                />
-                <ProjectBuild 
-                    img={hourglass}
-                    name="Hourglass Meetings" 
-                    isDark={isDark}
-                    show={true}
-                    description="Hourglass is a meeting place for professionals with deadlines. A smart way to have more efficient, fruitful meetings." 
-                    link="hourglass.app"
-                />
-
-                <ProjectBuild 
-                    img={learnr}
-                    name="Learnr" 
-                    isDark={isDark}
-                    show={true}
-                    description="Educational website birthed from my passion to create content for the masses." 
-                    link="hourglass.app"
-                />
-                <ProjectBuild 
-                    img={dot}
-                    name="Dot" 
-                    isDark={isDark}
-                    show={true}
-                    description="Educational website birthed from my passion to create content for the masses." 
-                    link="dotinc.app"
-                />
-                <ProjectBuild 
-                    img={bl}
-                    name="Boolean Labs" 
-                    isDark={isDark}
-                    show={true}
-                    description="Educational website birthed from my passion to create content for the masses." 
-                    link="booleanlabs.io"
-                />
-                <ProjectBuild 
-                    img={commerce}
-                    name="Commerce.co" 
-                    isDark={isDark}
-                    show={true}
-                    description="Educational website birthed from my passion to create content for the masses." 
-                    link="github.com"
-                />
-                {/* <ProjectBuild /> */}
+                {
+                    ProjectData.map((project, index) => (
+                        <Project 
+                            index={index}
+                            img={project.img}
+                            name={project.name}
+                            show={project.show}
+                            isDark={isDark}
+                            description={project.description} 
+                            link={project.link}
+                        />                 
+                    ))
+                }
             </div>
 
         </div>
