@@ -1,8 +1,18 @@
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+import { marked } from 'marked'
+import Link from 'next/link'
+import Head from 'next/head'
+
 import styles from '../styles/Articles.module.css'
 import Navbar from '../components/Navbar/Navbar'
 import Article from '../components/Article'
 
-export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme }) {
+export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme, articles }) {
+    
+    // console.log(articles[0].frontmatter.title)
+
     return (
         <div className={styles.articleswrapper}>
             <Navbar isDark={isDark} toggleOverlay={ handleSetOverlay } toggleDark={ handleSetDarkTheme } />
@@ -21,11 +31,47 @@ export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme
                 <hr />
 
                 <div className={styles.posts}>
-                    <Article isDark={isDark} />
-                    <Article isDark={isDark}/>
-                    <Article isDark={isDark} />
+                    {articles.map((article, index) => (
+                        <Article 
+                            key={index} 
+                            isDark={isDark} 
+                            img={article.frontmatter.cover_image}
+                            reverseLink={article.slug}
+                            date={article.frontmatter.date}
+                            title={article.frontmatter.title}
+                            preText={article.frontmatter.pretext}
+                            readTime={article.frontmatter.reading_time}
+                            tag={article.frontmatter.tag}
+                        />
+                    ))}
+
                 </div>
             </div>
         </div>
     )
+}
+
+export async function getStaticProps() {
+    const files = fs.readdirSync(path.join('articles'))
+
+    const articles = files.map(filename => {
+        const slug = filename.replace('.md', '')
+
+        const markdownWithMeta = fs.readFileSync(path.join('articles', filename), 'utf-8')
+
+        const {data: frontmatter} = matter(markdownWithMeta)
+
+        return {
+            slug,
+            frontmatter,
+        }
+    })
+
+    // console.log(articles)
+
+    return {
+        props: {
+            articles: articles
+        }
+    }
 }

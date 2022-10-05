@@ -570,3 +570,9 @@ nav .navlinks ul li a {
         width: 85%;
     }
 }
+
+@media only screen and (max-width: 386px) {
+    .info-text h1 {
+        font-size: 22px;
+    }
+}

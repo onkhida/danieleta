@@ -74,6 +74,10 @@
     border-bottom-left-radius: 5px;
 }
 
+.article .img img {
+    width: 100%;
+}
+
 .article .text {
     width: 70%;
     flex-direction: column;

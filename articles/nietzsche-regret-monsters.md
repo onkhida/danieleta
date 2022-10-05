@@ -1,10 +1,10 @@
 ---
-title: "Exploring Sicillian Theory"
+title: "Friedrich Nietzsche And The Regret Monsters"
 pretext: "Nunc vel pellentesque libero. Aenean at sagittis dolor. Nam fermentum quam metus, et finibus est condimentum non. Curabitur sed est semper, fermentum lectus in, consequat erat. Maecenas eleifend magna eget purus commodo vehicula. Sed volutpat faucibus ex, sit amet pellentesque est dictum ut. Vivamus eget aliquam justo, at placerat justo. Morbi fringilla quis neque quis vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies est quis justo pellentesque malesuada."
-cover_image: "/articles/kasparov.png"
-date: "SEPTEMBER 5, 2022"
+cover_image: "/articles/nietzsche.png"
+date: "SEPTEMBER 13, 2022"
 reading_time: "5 mins."
-tag: "chess"
+tag: "philosophy"
 ---
 
 Vivamus suscipit, lacus vitae tristique consectetur, nibh tortor laoreet arcu, a tincidunt urna dui ut justo. Duis eu justo vel quam pellentesque efficitur. Nam feugiat, ante a condimentum aliquet, magna ipsum porttitor tortor, sit amet pharetra neque augue eget risus. Aenean egestas odio sed justo condimentum, sit amet luctus metus pellentesque. Aenean et quam at turpis vehicula pulvinar. Proin pharetra bibendum mi, et feugiat nulla. Aenean et suscipit magna. Pellentesque imperdiet, mauris eu imperdiet semper, diam lacus pretium est, id auctor leo est et ex. Quisque vel dolor eget purus convallis maximus. Donec volutpat ut felis eget dapibus. Cras at odio molestie, viverra sapien et, condimentum tellus.

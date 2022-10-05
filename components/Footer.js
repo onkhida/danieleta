@@ -6,17 +6,17 @@ function Footer({ isDark }) {
             <div className="links">
                 <ul>
                     <li>
-                        <Link href="#">
+                        <Link href="/about">
                             <a className={`${isDark ? "" : "black-txt"}`}>About</a> 
                         </Link>
                     </li>
                     <li>
-                        <Link href="#">
+                        <Link href="/work">
                             <a className={`${isDark ? "" : "black-txt"}`}>Projects</a> 
                         </Link>
                     </li>
                     <li>
-                        <Link href="#">
+                        <Link href="/articles">
                             <a className={`${isDark ? "" : "black-txt"}`}>Articles</a> 
                         </Link>
                     </li>

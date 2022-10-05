@@ -12,8 +12,6 @@ function MyApp({ Component, pageProps }) {
       setOverlay(
           (prevbool) => !prevbool
       )
-
-      console.log(overlay)
   }
 
   const [ darktheme, setDarkTheme ] = useState(true)
