@@ -43,7 +43,7 @@ function Info({ isDark }) {
                     </a>
                 </Link>
 
-                <Link href='#'>
+                <Link href='https://github.com/danieldoteta'>
                     <a 
                         onMouseEnter={addBackground} 
                         onMouseLeave={removeBackground}
@@ -53,7 +53,7 @@ function Info({ isDark }) {
                     </a>
                 </Link>
 
-                <Link href='#'>
+                <Link href='https://www.linkedin.com/in/daniel-eta/'>
                     <a 
                         onMouseEnter={addBackground} 
                         onMouseLeave={removeBackground}
@@ -93,7 +93,7 @@ function Info({ isDark }) {
                     </a>
                 </Link>
 
-                <Link href='#'>
+                <Link href='https://github.com/danieldoteta'>
                     <a 
                         className={`${isDark ? "" : "black-txt"}`}
                     >
@@ -101,7 +101,7 @@ function Info({ isDark }) {
                     </a>
                 </Link>
 
-                <Link href='#'>
+                <Link href='https://www.linkedin.com/in/daniel-eta/'>
                     <a 
                         className={`${isDark ? "" : "black-txt"}`}
                     >

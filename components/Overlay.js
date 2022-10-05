@@ -33,12 +33,12 @@ function Overlay({ openOverlay, toggleOverlay, toggleDark }) {
                             </Link>
                         </li>
                         <li>
-                            <Link href="#">
+                            <Link href="/work">
                                 <a onClick={ toggleOverlay }>Projects</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="#">
+                            <Link href="/articles">
                                 <a onClick={ toggleOverlay }>Articles</a>
                             </Link>
                         </li>

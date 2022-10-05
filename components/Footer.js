@@ -3,7 +3,6 @@ import Link from 'next/link'
 function Footer({ isDark }) {
     return ( 
         <div className="footer-container">
-            {/* {`${isDark ? "" : "black-txt"}`} */}
             <div className="links">
                 <ul>
                     <li>

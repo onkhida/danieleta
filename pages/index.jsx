@@ -1,5 +1,5 @@
 import Info from '../components/Info'
-import Resume from '../components/Resume'
+import Resume from '../components/Resume/Resume'
 import Footer from '../components/Footer'
 import Image from 'next/image'
 import fingersCrossed from '../public/fingers-crossed.png'
