@@ -28,7 +28,7 @@ function Overlay({ openOverlay, toggleOverlay, toggleDark }) {
                 <div className="nav-links">
                     <ul>                         
                         <li>
-                            <Link href="#">
+                            <Link href="/about">
                                 <a onClick={ toggleOverlay }>About</a>
                             </Link>
                         </li>

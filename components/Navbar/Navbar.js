@@ -20,7 +20,7 @@ export default function Header({ isDark, toggleOverlay, toggleDark }) {
             <div className="navlinks">
                 <ul>
                     <li>
-                        <Link href="#">
+                        <Link href="/about">
                             <a className={`${isDark ? "" : "black-txt"}`}>About</a> 
                         </Link>
                     </li>
