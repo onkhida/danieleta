@@ -33,7 +33,6 @@ export default function Work({ isDark, handleSetOverlay, handleSetDarkTheme }) {
                     ))
                 }
             </div>
-
         </div>
        </div>
     )

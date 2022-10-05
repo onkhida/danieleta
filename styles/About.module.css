@@ -1,0 +1,83 @@
+.wrapper {
+    /* border: 1px solid red; */
+    width: 70%;
+}
+
+.wrapper .content {
+    width: 100%;
+    /* border: 1px solid white; */
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrapper .content .text {
+    width: 50%;
+    /* border: 1px solid aqua; */
+    margin-bottom: 30px;
+}
+
+.wrapper .content .graphic {
+    width: 45%;
+    margin-bottom: 30px;
+    /* border: 1px solid aquamarine; */
+}
+
+.wrapper .content .graphic .links {
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-evenly;
+}
+
+.wrapper .content .text h1 {
+    font-size: 57px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Crimson Pro', serif;
+}
+
+.wrapper .content .text p {
+    font-family: 'DM Sans', regular;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1245px) {
+    .wrapper {
+        width: 80%;
+    }
+
+    .wrapper .content {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 1041px) {
+    .wrapper {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .wrapper .content {
+        flex-direction: column-reverse;
+
+    }
+
+    .wrapper .content .text {
+        width: 100%;
+    }
+
+    .wrapper .content .graphic {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .wrapper .content .graphic {
+        width: 100%;
+    }
+}
