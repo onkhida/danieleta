@@ -1,18 +1,66 @@
 ---
 title: "Exploring Sicillian Theory"
-pretext: "Nunc vel pellentesque libero. Aenean at sagittis dolor. Nam fermentum quam metus, et finibus est condimentum non. Curabitur sed est semper, fermentum lectus in, consequat erat. Maecenas eleifend magna eget purus commodo vehicula. Sed volutpat faucibus ex, sit amet pellentesque est dictum ut. Vivamus eget aliquam justo, at placerat justo. Morbi fringilla quis neque quis vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies est quis justo pellentesque malesuada."
+pretext: "Nunc vel pellentesque libero. Aenean at sagittis dolor. Nam fermentum quam metus, et finibus est condimentum non. Curabitur sed est semper, fermentum lectus in, consequat erat. Maecenas eleifend magna eget purus commodo vehicula. Sed volutpat faucibus ex, sit amet pellentesque est dictum ut."
 cover_image: "/articles/kasparov.png"
 date: "SEPTEMBER 5, 2022"
 reading_time: "5 mins."
-tag: "chess"
+tag: "CHESS"
 ---
 
-Vivamus suscipit, lacus vitae tristique consectetur, nibh tortor laoreet arcu, a tincidunt urna dui ut justo. Duis eu justo vel quam pellentesque efficitur. Nam feugiat, ante a condimentum aliquet, magna ipsum porttitor tortor, sit amet pharetra neque augue eget risus. Aenean egestas odio sed justo condimentum, sit amet luctus metus pellentesque. Aenean et quam at turpis vehicula pulvinar. Proin pharetra bibendum mi, et feugiat nulla. Aenean et suscipit magna. Pellentesque imperdiet, mauris eu imperdiet semper, diam lacus pretium est, id auctor leo est et ex. Quisque vel dolor eget purus convallis maximus. Donec volutpat ut felis eget dapibus. Cras at odio molestie, viverra sapien et, condimentum tellus.
+---
+title: 'Django Crash Course'
+date: 'March 5, 2021'
+excerpt: 'Django is a very powerful, high level Python framework for building web applications'
+cover_image: '/images/posts/img3.jpg'
+---
 
-Vestibulum elit dolor, accumsan sit amet ornare ut, convallis vel quam. Ut ultricies porttitor metus, a dapibus tortor commodo et. Etiam eleifend augue feugiat, fringilla diam at, varius nibh. Pellentesque eu nisi urna. Morbi a gravida magna. Nunc nec est fringilla, pretium massa auctor, cursus lectus. Vestibulum id ultricies massa, quis consequat magna. Mauris eu elementum nunc, ut tincidunt sapien. Suspendisse libero purus, accumsan ac augue vitae, pulvinar aliquet mi. Ut scelerisque nisi nibh, at accumsan massa placerat ut. Nunc ultrices tristique sollicitudin. Nunc molestie, nisl non commodo luctus, sapien mi consequat metus, non vulputate enim turpis non sem. In eu ultricies elit, non luctus felis. Nullam posuere libero maximus ex facilisis, ut laoreet nibh ultricies. Aliquam interdum nulla eget est convallis pulvinar.
+Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
+haec praepes [partes epulae](http://cui.com/), in egisse de. Caecisque ter
+manus. Munere in exhalat, ferre sed [habe quaeque saepe](http://ne.org/fretum)
+verba caput ferarum _nubila_? Patriam Cyparisse tamen, **saxum** fide postponere
+pavida ne omnes etiam, atque. Sonuit omina sed sine haerebat illic fit a mora
+in.
 
-Vivamus lorem erat, ultrices vitae turpis ornare, rhoncus finibus sem. Duis scelerisque lectus nec ligula laoreet, sit amet rutrum nisl molestie. Proin quis fringilla eros. Nulla sed tellus nibh. Cras quis dolor non ex aliquam lacinia. Cras fringilla erat id mi hendrerit auctor quis sed magna. Sed rutrum, purus vitae fermentum efficitur, felis lectus scelerisque odio, in faucibus sapien enim ut ex. Cras sit amet nisl quis massa viverra suscipit non non nisi. Curabitur ut turpis purus. Donec aliquam tincidunt turpis, id pharetra lectus ultrices eget. Morbi eu leo congue, volutpat nulla ut, mattis mauris. In hac habitasse platea dictumst.
+1. Serrae enim Etruscam aquis
+2. Et premis et flumine frontem minatur oppressos
+3. Inquam rector Icarus possum vim tumulo propiusque
+4. Vulnus se Latreus
+5. Aptumque bis
 
-Donec egestas placerat tristique. Proin quam eros, vehicula vel nibh a, sagittis viverra ante. Ut egestas id massa non accumsan. Sed et mattis eros. Pellentesque luctus at purus eget egestas. Nullam nec mauris purus. Curabitur facilisis ligula vitae nibh porttitor, vitae congue mauris euismod. Morbi imperdiet, nisl at efficitur ornare, erat neque scelerisque libero, vel iaculis justo odio at sem. Nunc pretium porta turpis ac imperdiet. Proin nec maximus ipsum. Praesent velit velit, eleifend ac odio a, lacinia varius metus.
+## Turpius Aegides membris colat volentes fallere
 
-Mauris a tellus vitae mauris sodales volutpat quis sed quam. Donec vel tincidunt augue. Vivamus sagittis dui lorem, sit amet condimentum magna dapibus in. Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus vestibulum urna et tortor faucibus, sed placerat ipsum elementum. Duis a magna lorem. Vivamus interdum gravida egestas.
+Ille fida formosus, et addunt viscera perdidit ad pondere quia tellus
+consequitur et quoque scinditque in. Ratis laborum instabat quaedam partem
+Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
+procul fugitque corpora iugales!
+
+    var ethics_font_drive = cycleSystemProgram + deprecatedTransferIp.ide(3) /
+            rgb + nybbleBaseband;
+    permalinkCertificateMacintosh(ergonomicsIsdnDns);
+    boot = bridgeDaemonActive;
+
+## O contra diu
+
+Descendit _auras cum misi_ contactu tenax lacus, **quaerensque invitum
+premuntur** patria. Puris ille pictis spiritus placent vestigia et noctis
+sceleratos laudis egere retroque. Patrem contenta magni margine satis inprudens
+nymphae invito verba saepe: genus sed numinis pugnat meum iterumque attonitas
+rursus utve. Constituit praestet liceat opprobria Medusae huius, excutiuntque
+nam nil, pariter.
+
+Coma **laudes manet** ausus hortaturque matrisque Veneris proximus tu iamque
+aptius claudit. Tmolus tetigere iussos animumque quid poplite Hippotaden? Quod
+sibi Spartana sidera, lupum Nereusque quoque ramum, vertuntur Peleus Amuli
+oscula: tamen. Surgere Epidaurius movit crede soceri Euboicam quoque.
+
+Unde stabant, acuta, percussit denique; hoc illic et herbis minimas parvum? Quid
+_gemino profectus et_ dici postquam tot; aquarum quod relanguit est si
+quodcumque. Ossaque protinus, quod somno est, repetit, hoc passu est. Qui devia;
+respice humum vobis oscula, in Lotis nymphae.
+
+Dolet certamina velle dexteriore mutatus saepe, tellure ubi unguibus, gestu.
+Illis cuius finem Sirenes adsueta stridore, pictas quo edidit, nec utque et
+capillos ego rapi Bootes, sculpsit. Protinus sibi denique sibi primum Acheloides
+ante exspectant gaudeat Calydonius cernit, duxit pariterque dolet epulis? Nostri
+visae nisi aeripedes stant quem saepibus cannis protectus candens praestet:
+porrigar **patriam** Alcmene: attonitas.

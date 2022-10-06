@@ -576,3 +576,7 @@ nav .navlinks ul li a {
         font-size: 22px;
     }
 }
+
+.make-cursor {
+    cursor: pointer;
+}
