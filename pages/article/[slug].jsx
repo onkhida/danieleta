@@ -5,8 +5,6 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
-import Link from 'next/link'
-import Head from 'next/head'
 
 export default function ArticlePage({ frontmatter: {title, date, cover_image, reading_time, tag, pretext}, slug, content, isDark, handleSetDarkTheme  }) {
 
@@ -23,7 +21,7 @@ export default function ArticlePage({ frontmatter: {title, date, cover_image, re
 
     return (
         <div className={styles.wrapper}>
-            <Navbar isDark={isDark} toggleDark={handleSetDarkTheme} />
+            <Navbar date={date} reading_time={reading_time} isDark={isDark} toggleDark={handleSetDarkTheme} />
             <div className={styles.img}>
                 <img src={`${cover_image}`} alt="" />
             </div>

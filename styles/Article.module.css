@@ -49,13 +49,25 @@
 }
 
 .wrapper .title h1 {
-    font-size: 27px;
+    font-size: 28px;
 }
 
 .wrapper .content {
     width: 100%;
     /* border: 1px solid white; */
     margin-top: 25px;
+}
+
+.wrapper .content p {
+    margin-bottom: 10px;
+}
+
+.wrapper .content em {
+    font-style: italic;
+}
+
+.wrapper .content strong {
+    font-weight: bold;
 }
 
 .wrapper .title .pretext {
@@ -66,25 +78,87 @@
     width: 75%;
 }
 
-.wrapper .content p {
+.wrapper .content {
     font-family: 'Crimson Pro';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 17px;
+    line-height: 20px;
 }
 
 .wrapper .content code {
-    font-family: monospace;
-    /* border: 1px solid red; */
-    width: 100%;
-    display: block;
+    font-family: 'Fira Code', monospace;
+    color: inherit;
+}
+
+.wrapper .content ol {
+    list-style-type: decimal;
+    margin: 10px 2rem 10px 0;
+    margin-left: 2rem;
+}
+
+.wrapper .content ul {
+    list-style-type: disc;
+    margin: 10px 2rem 10px 0;
+    margin-left: 2rem;
+}
+
+.wrapper .content a {
+	position: relative;
+	white-space: nowrap;
+	width: fit-content;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid #5100ff;
+    transition: all 0.5s;
+}
+
+.wrapper .content a:hover {
+    background: #5100ff;
+    color: white;
+}
+
+.wrapper .content blockquote {
+    background: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-left: 5px solid #5100ff;
+}
+
+.wrapper .content blockquote p {
+    width: 80%;
+    padding: 15px 0 15px 0;
+    margin: 0;
+    color: inherit;
+}
+
+.wrapper .content h2 {
+    font-size: 25px;
+    margin: 40px 0 20px 0;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    line-height: 27px;
 }
 
 .wrapper .content pre {
-    background: #f4f4f4;
+    background: #202824;
+    /* color: white; */
     padding: 20px;
     margin: 20px 0;
     line-height: 2.3;
-    color: black;
+    color: white;
+    overflow-x: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
+@media only screen and (max-width: 850px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .wrapper .title .pretext {
+        width: 90%;
+    }
+}

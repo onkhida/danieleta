@@ -4,7 +4,7 @@ pretext: "Nunc vel pellentesque libero. Aenean at sagittis dolor. Nam fermentum 
 cover_image: "/articles/nietzsche.png"
 date: "SEPTEMBER 13, 2022"
 reading_time: "5 mins."
-tag: "philosophy"
+tag: "PHILOSOPHY"
 ---
 
 Vivamus suscipit, lacus vitae tristique consectetur, nibh tortor laoreet arcu, a tincidunt urna dui ut justo. Duis eu justo vel quam pellentesque efficitur. Nam feugiat, ante a condimentum aliquet, magna ipsum porttitor tortor, sit amet pharetra neque augue eget risus. Aenean egestas odio sed justo condimentum, sit amet luctus metus pellentesque. Aenean et quam at turpis vehicula pulvinar. Proin pharetra bibendum mi, et feugiat nulla. Aenean et suscipit magna. Pellentesque imperdiet, mauris eu imperdiet semper, diam lacus pretium est, id auctor leo est et ex. Quisque vel dolor eget purus convallis maximus. Donec volutpat ut felis eget dapibus. Cras at odio molestie, viverra sapien et, condimentum tellus.

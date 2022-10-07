@@ -7,5 +7,4 @@ export default function Design({ isDark }) {
             <Sun />
         </>
     )
-
 }
