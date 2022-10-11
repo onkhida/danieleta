@@ -22,6 +22,7 @@ export default function Work({ isDark, handleSetOverlay, handleSetDarkTheme }) {
                 {
                     ProjectData.map((project, index) => (
                         <Project 
+                            key={index}
                             index={index}
                             img={project.img}
                             name={project.name}

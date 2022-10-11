@@ -13,6 +13,7 @@ function Resume({ isDark }) {
                         {
                             PastWork.map((work, index) => (
                                 <Work 
+                                    key={index}
                                     job={work.job}
                                     location={work.location}
                                     separator={work.seperator}
@@ -30,6 +31,7 @@ function Resume({ isDark }) {
                     {
                             CurrentWork.map((work, index) => (
                                 <Work 
+                                    key={index}
                                     job={work.job}
                                     location={work.location}
                                     separator={work.seperator}
