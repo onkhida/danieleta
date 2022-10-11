@@ -31,21 +31,21 @@ const Projects = [
         img: dot,
         name: "Dot", 
         show: true,
-        description: "Educational website birthed from my passion to create content for the masses.", 
+        description: "Technical work for the Dot Startup. An all-in-one financial service to students on the African Continent.", 
         link: "dotinc.app"
     },
     {
         img: booleanlabs,
         name: "Boolean Labs", 
         show: true,
-        description: "Educational website birthed from my passion to create content for the masses." ,
+        description: "Startup accelerator program for founders and individuals with discrete engagements built to meet growth targets." ,
         link: "booleanlabs.io"
     },
     {
         img: commerce,
         name: "Commerce.co",
         show: true,
-        description: "Educational website birthed from my passion to create content for the masses.",
+        description: "Commercial platform to ease the transactional burdens that came with buying and selling from enterprises on campus.",
         link: "github.com"
     },
 ]

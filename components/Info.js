@@ -34,7 +34,7 @@ function Info({ isDark }) {
             <p className={`${isDark ? "" : "black-txt"}`}>Leveraging emerging technologies to foster communal growth is my genuine passion. Translating a burdensome problem into a ground-breaking solution gives me fulfillment. I derive raw gratification from building systems that work. In whatever work I do, I’m constantly looking to satisfy these 3 needs and leave my footprint of excellence. </p>
 
             <div className="btn-group">
-                <Link href='#'>
+                <Link href='https://twitter.com/developedbyeta'>
                     <a 
                         style={bgStyle}
                         className={`${isDark ? "" : "black-txt"}`}
@@ -85,7 +85,7 @@ function Info({ isDark }) {
             </div>
 
             <div className="mobile-btn-group">
-                <Link href='#'>
+                <Link href='https://twitter.com/developedbyeta'>
                     <a 
                         className={`${isDark ? "" : "black-txt"}`}
                     >
