@@ -19,6 +19,18 @@
     margin-bottom: 30px;
 }
 
+.wrapper .content .text a {
+    text-decoration: none;
+    border-bottom: 1px solid #5100ff;
+    transition: all 0.5s;
+    color: inherit;
+}
+
+.wrapper .content .text a:hover {
+    background: #5100ff;
+    color: white;
+}
+
 .wrapper .content .graphic {
     width: 45%;
     margin-bottom: 30px;
@@ -45,6 +57,7 @@
     font-size: 17px;
     margin-top: 10px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 25px;
 }
 
 @media only screen and (max-width: 1245px) {

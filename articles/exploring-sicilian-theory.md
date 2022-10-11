@@ -28,17 +28,18 @@ Phoebus, manus _partibus poenas_. Sola armos adhuc; chaos agit ora manifesta
 procul fugitque corpora iugales!
 
 ```javascript
-const express = require("express");
-const app = express();
-const port = 3000;
+  // starting a simple express server
+  const express = require("express");
+  const app = express();
+  const port = 3000;
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+  app.get("/", (req, res) => {
+    res.send("Hello World!");
+  });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
+  app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`);
+  });
 ```
 
 ## 🎯 O contra diu
@@ -48,7 +49,7 @@ premuntur** patria. Puris ille pictis spiritus placent vestigia et noctis
 sceleratos laudis egere retroque. Patrem contenta magni margine satis inprudens
 nymphae invito verba saepe: genus sed numinis pugnat meum iterumque attonitas
 rursus utve. Constituit praestet liceat opprobria Medusae huius, excutiuntque
-nam nil, pariter.
+nam nil, pariter. `const` is better than `let`
 
 
 

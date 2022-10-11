@@ -83,12 +83,16 @@
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 .wrapper .content code {
     font-family: 'Fira Code', monospace;
-    color: inherit;
+    color: white;
+    background: #202824;
+    font-size: 15px;
+    padding: 1px 8px 1px 8px;
+    border-radius: 4px;
 }
 
 .wrapper .content ol {

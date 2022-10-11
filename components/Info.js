@@ -63,7 +63,7 @@ function Info({ isDark }) {
                     </a>
                 </Link>
 
-                <Link href='#'>
+                <Link href='https://www.youtube.com/channel/UCosyGC0IbmwtOzMRpVfrVWw'>
                     <a 
                         onMouseEnter={addBackground} 
                         onMouseLeave={removeBackground}
@@ -109,7 +109,7 @@ function Info({ isDark }) {
                     </a>
                 </Link>
 
-                <Link href='#'>
+                <Link href='https://www.youtube.com/channel/UCosyGC0IbmwtOzMRpVfrVWw'>
                     <a 
                         className={`${isDark ? "" : "black-txt"}`}
                     >

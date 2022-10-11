@@ -39,7 +39,6 @@ function MyApp({ Component, pageProps }) {
             <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css" />
             <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
             {/* <script>hljs.initHighlightingOnLoad();</script> */}
-
           </Head>
 
 
@@ -48,7 +47,7 @@ function MyApp({ Component, pageProps }) {
               <Component handleSetOverlay={handleSetOverlay} handleSetDarkTheme={handleSetDarkTheme} isDark={darktheme} {...pageProps} />
             <Footer isDark={darktheme} />
           </div>
-         </>
+        </>
 
 }
 
