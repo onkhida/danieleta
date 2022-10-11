@@ -15,7 +15,7 @@ export default function Work({ isDark, handleSetOverlay, handleSetDarkTheme }) {
          <div className={styles.wrapper}>
             <div className={styles.header}>
                 <h1 id={`${isDark ? "" : "black-txt"}`} >::work</h1>
-                <p id={`${isDark ? "" : "black-txt"}`} >I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved.</p>
+                <p id={`${isDark ? "" : "black-txt"}`} className={styles.about}>I have an incessant need to build things. In fact, it’s a trait that I believe has been with me for as long as I can remember. The desire to constantly take a reflective look at my context and conjure up solutions that solve respective problems. Over the past few years, I’ve done quite a bit of work on many different things, but listed here are the specific one’s I am most proud of. Some of them are open source, so don’t hesitate to contribute on GitHub.</p>
             </div>
 
             <div className={styles.content}>

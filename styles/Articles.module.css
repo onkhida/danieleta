@@ -124,6 +124,11 @@
     /* border: 2px solid aquamarine; */
 }
 
+.articleswrapper .wrap .about {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 1300px) {
     .articleswrapper .wrap .posts {
         /* border: 3px solid yellow; */

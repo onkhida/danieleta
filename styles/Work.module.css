@@ -6,6 +6,10 @@
     flex-direction: column;
 }
 
+.about {
+    width: 100%;
+}
+
 .wrapper .header {
     /* border: 1px solid red; */
     margin-bottom: 20px;
