@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Navbar from '../components/Navbar/Navbar'
 
 import GithubLight from '../components/Socials/GithubLight'
-import GithubDark from '../components/Socials/GithubDark'
+import GithubDark from '../components/Socials/GithubDark.js'
 import LinkedInLight from '../components/Socials/LinkedInLight'
 import LinkedInDark from '../components/Socials/LinkedInDark'
 import MediumLight from '../components/Socials/MediumLight'
