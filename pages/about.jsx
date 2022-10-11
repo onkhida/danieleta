@@ -44,7 +44,7 @@ export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme
                     />
 
                     <div className={styles.links}>
-                        {isDark ? <GithubLight /> : <GithubDark />} 
+                        {isDark ? <GithubLight /> : <GitHubDark />} 
                         {isDark ? <LinkedInLight /> : <LinkedInDark />} 
                         {isDark ? <MediumLight /> : <MediumDark />} 
                         {isDark ? <TwitterLight /> : <TwitterDark />} 
