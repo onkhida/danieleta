@@ -1,7 +1,7 @@
 import styles from '../styles/Articles.module.css'
 import Link from 'next/link'
 
-export default function Article({ isDark, img, reverseLink, date, title, preText, readTime, tag }) {
+export default function Article({ isDark, img, reverseLink, date, title, preText, readTime, tag, demoText }) {
     // console.log(img, reverseLink, date, title, preText, tag, readTime)
 
     const bgStyle = {
@@ -22,7 +22,7 @@ export default function Article({ isDark, img, reverseLink, date, title, preText
                     <small id={`${isDark ? "" : "black-txt"}`}>{date}</small>
                     <h1 id={`${isDark ? "" : "black-txt"}`}>{title}</h1>
                     <p id={`${isDark ? "" : "black-txt"}`}>
-                        {preText}
+                        {`${demoText} [...]`}
                     </p>
                     <a href="#">{readTime}</a>
                 </div>

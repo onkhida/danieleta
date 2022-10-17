@@ -11,7 +11,7 @@ import Article from '../components/Article'
 
 export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme, articles }) {
     
-    // console.log(articles[0].frontmatter.title)
+    const demoText = articles[0].content.slice(0, 400)
 
     return (
         <div className={styles.articleswrapper}>
@@ -42,6 +42,7 @@ export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme
                             preText={article.frontmatter.pretext}
                             readTime={article.frontmatter.reading_time}
                             tag={article.frontmatter.tag}
+                            demoText={demoText}
                         />
                     ))}
 
@@ -59,13 +60,14 @@ export async function getStaticProps() {
 
         const markdownWithMeta = fs.readFileSync(path.join('articles', filename), 'utf-8')
 
-        const {data: frontmatter} = matter(markdownWithMeta)
+        const { data: frontmatter, content } = matter(markdownWithMeta)
 
         return {
             slug,
             frontmatter,
+            content,
         }
-    })
+    }) 
 
     // console.log(articles)
 
