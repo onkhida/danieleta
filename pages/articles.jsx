@@ -14,8 +14,8 @@ import HasArticles from '../components/HasArticles'
 export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme, articles }) {
     const [articleTag, setArticleTag] = useState('ALL')
 
-    const handleSetArticleTag = (tag) => {
-        setArticleTag(tag)
+    const handleSetArticleTag = (e) => {
+        setArticleTag(e.target.textContent)
     }
     
     let allArticles = []
@@ -30,7 +30,9 @@ export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme
         })
     }
 
-    console.log(allArticles.length > 0)
+    const tagColor = {
+        color:  `${isDark ? "#FFFFFF" : "#000000"}`
+    }
 
     return (
         <div className={styles.articleswrapper}>
@@ -40,17 +42,17 @@ export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme
                 <h1 id={`${isDark ? "" : "black-txt"}`} >::articles</h1>
                 <p id={`${isDark ? "" : "black-txt"}`} className={styles.about}>My days are frequently overwhelmed with fragmented thoughts and feelings that contain many different topics and ideas. As I attempt to draw fulfillment from the wonder that is human existence, I’ve made this simple markdown blog to try and piece my many thoughts together, and to document and challenge the emotions, feelings and concepts that stay with me as I dive into my human experience. </p>
                 <div className={styles.tags}>
-                    <div className={`${articleTag==="ALL" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("ALL")}>ALL</div>
-                    <div className={`${articleTag==="CHESS" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("CHESS")}>CHESS</div>
-                    <div className={`${articleTag==="DATA SCIENCE" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("DATA SCIENCE")}>DATA SCIENCE</div>
-                    <div className={`${articleTag==="ALGORITHMS" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("ALGORITHMS")}>ALGORITHMS</div>
-                    <div className={`${articleTag==="WEB DEVELOPMENT" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("WEB DEVELOPMENT")}>WEB DEVELOPMENT</div>
-                    <div className={`${articleTag==="PHILOSOPHY" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("PHILOSOPHY")}>PHILOSOPHY</div>
+                    <div id={`${articleTag==="ALL" ? "active-tag" : ""}`} className={`${isDark ? "" : "black-txt"}`} onClick={(e) => handleSetArticleTag(e)}>ALL</div>
+                    <div id={`${articleTag==="CHESS" ? "active-tag" : ""}`} className={`${isDark ? "" : "black-txt"}`} onClick={(e) => handleSetArticleTag(e)}>CHESS</div>
+                    <div id={`${articleTag==="DATA SCIENCE" ? "active-tag" : ""}`} className={`${isDark ? "" : "black-txt"}`} onClick={(e) => handleSetArticleTag(e)}>DATA SCIENCE</div>
+                    <div id={`${articleTag==="ALGORITHMS" ? "active-tag" : ""}`} className={`${isDark ? "" : "black-txt"}`} onClick={(e) => handleSetArticleTag(e)}>ALGORITHMS</div>
+                    <div id={`${articleTag==="WEB DEVELOPMENT" ? "active-tag" : ""}`} className={`${isDark ? "" : "black-txt"}`} onClick={(e) => handleSetArticleTag(e)}>WEB DEVELOPMENT</div>
+                    <div id={`${articleTag==="PHILOSOPHY" ? "active-tag" : ""}`} className={`${isDark ? "" : "black-txt"}`} onClick={(e) => handleSetArticleTag(e)}>PHILOSOPHY</div>
                 </div>
                 <hr />
 
                 <div className={styles.posts}>
-                    {allArticles.length > 0 ? <HasArticles isDark={isDark} allArticles={allArticles} /> : <NoArticles />}
+                    {allArticles.length > 0 ? <HasArticles isDark={isDark} allArticles={allArticles} /> : <NoArticles isDark={isDark} />}
                 </div>
             </div>
         </div>
