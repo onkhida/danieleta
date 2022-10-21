@@ -40,7 +40,7 @@ export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme
                 <h1 id={`${isDark ? "" : "black-txt"}`} >::articles</h1>
                 <p id={`${isDark ? "" : "black-txt"}`} className={styles.about}>My days are frequently overwhelmed with fragmented thoughts and feelings that contain many different topics and ideas. As I attempt to draw fulfillment from the wonder that is human existence, I’ve made this simple markdown blog to try and piece my many thoughts together, and to document and challenge the emotions, feelings and concepts that stay with me as I dive into my human experience. </p>
                 <div className={styles.tags}>
-                    <div className={`${articleTag==="ALL" ? "active-tag" : ""}`} onClick={() => handleSetArticleTag("ALL")}>ALL</div>
+                    <div className={`${articleTag==="ALL" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("ALL")}>ALL</div>
                     <div className={`${articleTag==="CHESS" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("CHESS")}>CHESS</div>
                     <div className={`${articleTag==="DATA SCIENCE" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("DATA SCIENCE")}>DATA SCIENCE</div>
                     <div className={`${articleTag==="ALGORITHMS" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("ALGORITHMS")}>ALGORITHMS</div>
@@ -50,9 +50,7 @@ export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme
                 <hr />
 
                 <div className={styles.posts}>
-
                     {allArticles.length > 0 ? <HasArticles isDark={isDark} allArticles={allArticles} /> : <NoArticles />}
-
                 </div>
             </div>
         </div>
