@@ -580,3 +580,14 @@ nav .navlinks ul li a {
 .make-cursor {
     cursor: pointer;
 }
+
+.no-articles {
+    width: 100%;
+    height: 300px;
+    font-family: "Crimson Pro", serif;
+    border: 1px solid white;
+    border-style: dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

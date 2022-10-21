@@ -2,16 +2,35 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
-import Link from 'next/link'
-import Head from 'next/head'
+import { useState } from 'react'
 
 import styles from '../styles/Articles.module.css'
 import Navbar from '../components/Navbar/Navbar'
 import Article from '../components/Article'
 
+import NoArticles from '../components/NoArticles'
+import HasArticles from '../components/HasArticles'
+
 export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme, articles }) {
+    const [articleTag, setArticleTag] = useState('ALL')
+
+    const handleSetArticleTag = (tag) => {
+        setArticleTag(tag)
+    }
     
-    const demoText = articles[0].content.slice(0, 400)
+    let allArticles = []
+
+    if (articleTag == "ALL") {
+        allArticles = articles
+    }
+
+    else {
+        allArticles = articles.filter((article) => {
+            return article.frontmatter.tag == articleTag
+        })
+    }
+
+    console.log(allArticles.length > 0)
 
     return (
         <div className={styles.articleswrapper}>
@@ -21,30 +40,18 @@ export default function Articles ({ isDark, handleSetOverlay, handleSetDarkTheme
                 <h1 id={`${isDark ? "" : "black-txt"}`} >::articles</h1>
                 <p id={`${isDark ? "" : "black-txt"}`} className={styles.about}>My days are frequently overwhelmed with fragmented thoughts and feelings that contain many different topics and ideas. As I attempt to draw fulfillment from the wonder that is human existence, I’ve made this simple markdown blog to try and piece my many thoughts together, and to document and challenge the emotions, feelings and concepts that stay with me as I dive into my human experience. </p>
                 <div className={styles.tags}>
-                    <div className='active-tag'>ALL</div>
-                    <div id={`${isDark ? "" : "black-txt"}`} >CHESS</div>
-                    <div id={`${isDark ? "" : "black-txt"}`} >DATA SCIENCE</div>
-                    <div id={`${isDark ? "" : "black-txt"}`} >ALGORITHMS</div>
-                    <div id={`${isDark ? "" : "black-txt"}`} >WEB DEVELOPMENT</div>
-                    <div id={`${isDark ? "" : "black-txt"}`} >PHILOSOPHY</div>
+                    <div className={`${articleTag==="ALL" ? "active-tag" : ""}`} onClick={() => handleSetArticleTag("ALL")}>ALL</div>
+                    <div className={`${articleTag==="CHESS" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("CHESS")}>CHESS</div>
+                    <div className={`${articleTag==="DATA SCIENCE" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("DATA SCIENCE")}>DATA SCIENCE</div>
+                    <div className={`${articleTag==="ALGORITHMS" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("ALGORITHMS")}>ALGORITHMS</div>
+                    <div className={`${articleTag==="WEB DEVELOPMENT" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("WEB DEVELOPMENT")}>WEB DEVELOPMENT</div>
+                    <div className={`${articleTag==="PHILOSOPHY" ? "active-tag" : ""}`} id={`${isDark ? "" : "black-txt"}`} onClick={() => handleSetArticleTag("PHILOSOPHY")}>PHILOSOPHY</div>
                 </div>
                 <hr />
 
                 <div className={styles.posts}>
-                    {articles.map((article, index) => (
-                        <Article 
-                            key={index} 
-                            isDark={isDark} 
-                            img={article.frontmatter.cover_image}
-                            reverseLink={article.slug}
-                            date={article.frontmatter.date}
-                            title={article.frontmatter.title}
-                            preText={article.frontmatter.pretext}
-                            readTime={article.frontmatter.reading_time}
-                            tag={article.frontmatter.tag}
-                            demoText={demoText}
-                        />
-                    ))}
+
+                    {allArticles.length > 0 ? <HasArticles isDark={isDark} allArticles={allArticles} /> : <NoArticles />}
 
                 </div>
             </div>
