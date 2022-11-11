@@ -8,6 +8,12 @@ import HamburgerLight from './HamburgerLight'
 import HamburgerDark from './HamburgerDark'
 
 export default function Header({ isDark, toggleOverlay, toggleDark }) {
+    // background-image: linear-gradient(#000 0 0);
+
+    const navStyle = {
+        backgroundImage: `${isDark ? 'linear-gradient(#fff 0 0)' : 'linear-gradient(#000 0 0)'}`,
+    }
+
     return (
         <nav>
             <div className="icon">
@@ -21,22 +27,22 @@ export default function Header({ isDark, toggleOverlay, toggleDark }) {
                 <ul>
                     <li>
                         <Link href="/about">
-                            <a className={`${isDark ? "" : "black-txt"}`}>About</a> 
+                            <a style={navStyle} className={`${isDark ? "" : "black-txt"}`}>About</a> 
                         </Link>
                     </li>
                     <li>
                         <Link href="/work">
-                            <a className={`${isDark ? "" : "black-txt"}`}>Projects</a> 
+                            <a style={navStyle} className={`${isDark ? "" : "black-txt"}`}>Projects</a> 
                         </Link>
                     </li>
                     <li>
                         <Link href="/articles">
-                            <a className={`${isDark ? "" : "black-txt"}`}>Articles</a> 
+                            <a style={navStyle} className={`${isDark ? "" : "black-txt"}`}>Articles</a> 
                         </Link>
                     </li>
                     <li>
                         <Link href="#">
-                            <a className={`${isDark ? "" : "black-txt"}`}>Design & UI</a> 
+                            <a style={navStyle} className={`${isDark ? "" : "black-txt"}`}>Design & UI</a> 
                         </Link>
                     </li>
                 </ul>
