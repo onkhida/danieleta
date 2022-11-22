@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function Project({ img, name, description, link, isDark, show }) {
     const bgStyle = {
-        background: `${isDark ? "rgba(49, 4, 146, 0.41)" : "#EEEEEE"}`
+        background: `${isDark ? "rgba(49, 4, 146, 0.41)" : "#F6F6F6"}`
     }
     
     return (
